@@ -2,12 +2,19 @@
 #   file: config/routes.coffee
 
 # = Appendix
-#   I. Users
+#   I. Core
+#   II. Users
 
 module.exports = (app, passport, auth) ->
 
   #
-  # I. Users
+  # I. Core
+  #
+  core = require '../app/controllers/core'
+  app.get '/', core.index
+
+  #
+  # II. Users
   #
   users = require '../app/controllers/users'
   app.get '/login', users.login

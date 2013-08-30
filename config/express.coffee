@@ -3,6 +3,7 @@
 
 express = require('express')
 mongoStore = require('connect-mongo')(express)
+engine = require('ejs-locals')
 flash = require('connect-flash')
 helpers = require('view-helpers')
 path = require('path')
@@ -16,8 +17,9 @@ module.exports = (app, config, passport) ->
     level: 9
   }))
 
+  app.engine('ejs', engine)
   app.set('views', config.root + '/app/views')
-  app.set('view engine', 'eco')
+  app.set('view engine', 'ejs')
 
   app.configure ->
     app.use(helpers(config.app.name))

@@ -12,7 +12,8 @@
 	"dependencies": {
 		"express": "latest",
 		"coffee-script": "latest",
-		"eco": "latest",
+		"ejs": "latest",
+		"ejs-locals": "latest",
 		"mongoose": "latest",
 		"connect-mongo": "latest",
 		"connect-assets": "latest",
