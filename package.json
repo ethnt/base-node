@@ -1,0 +1,34 @@
+{
+	"name": "base-node",
+	"author": "Ethan Turkeltaub <hi@ethnt.me>",
+	"version": "0.1.0",
+	"scripts": {
+		"start": "node server"
+	},
+	"engines": {
+		"node": "0.10.x",
+		"npm": "1.2.x"
+	},
+	"dependencies": {
+		"express": "latest",
+		"coffee-script": "latest",
+		"eco": "latest",
+		"mongoose": "latest",
+		"connect-mongo": "latest",
+		"connect-assets": "latest",
+		"passport": "latest",
+		"passport-local": "latest",
+		"bcrypt": "latest",
+		"underscore": "latest",
+		"connect-flash": "latest",
+		"view-helpers": "latest",
+		"sass": "latest",
+		"moment": "latest",
+		"marked": "latest"
+	},
+	"devDependencies": {
+		"grunt": "latest",
+		"grunt-coffeelint": "latest",
+		"node-dev": "latest"
+	}
+}
